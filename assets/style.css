@@ -4,18 +4,26 @@
     
 }
 
+a:link{
+    text-decoration: none;
+}
+
 a:hover{
     color: blue;
-    text-shadow: 5px 5px 15px white,-5px -5px 15px white;
+    text-shadow: 2px 2px 5px lightblue,-2px -2px 5px lightblue;
     transition-duration: 0.5s;
 
 }
 
+a:visited{
+    color: blue;
+}
+
 body{
     display: flex;
+    background-color: black;
     flex-direction: column;
-    /* height: 800px; */
-    background-color: blanchedalmond;
+
 
 }
 
@@ -57,14 +65,13 @@ header nav{
     position: absolute;    
     right: 0%;
     width: 50%;
-    flex-wrap: wrap;
     font-family: var(--fontnav);
     font-weight: bolder;
     font-size: 25px;
 
 }
 
-header nav ul{
+header ul{
     
     border: black solid 5px;
     list-style: none;
@@ -85,9 +92,10 @@ section{
 #aboutme{
     position:relative;
     display: flex;
-    /* width: 100%; */
-    height: 300px;
+    min-height: 300px;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 #aboutme img{
@@ -117,8 +125,6 @@ h2{
     margin:10px,0,0,0;
     width:100%
 
-
-
 }
 
 main{
@@ -126,10 +132,16 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    background-image: url("../images/Nightsky.jpeg");
+    background-repeat: repeat-x;
+    background-size: auto;
+    color: white;
 }
 
 main h2{
     width:100%;
+    font-size: 250%;
+    margin-top: 20px;
 }
 
 #workexample{
@@ -143,56 +155,45 @@ main h2{
 
 }
 
-main section figure {
+main article figure {
     margin:20px;
     position: relative;
     height: 300px;
     width: 400px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
 }
 
 .firstapp{
-    border-radius: 20%;
-    box-shadow:5px 5px 10px black, -5px -5px 10px black;
     width: 800px;
     height: 400px;
     display: inline-block;
+    flex-shrink: 1;
 
 }
 
 #workexample img {
-    border-radius: 20%;
+    border-radius: 30%;
     box-shadow:5px 5px 10px black, -5px -5px 10px black;
     width: 100%;
     height: 100%;
-    display: inline-block;
+    opacity: 0.7;
 
 }
 #workexample img:hover{
 
     box-shadow:5px 5px 10px white, -5px -5px 10px white;
+    opacity: 1;
+    border-radius: 15%;
     transition: 0.5s;
 
 }
 
-.pfirstapp{
-
-    position:absolute;
-    bottom:20%;
-    left:0;
-    text-align: center;
-    background-color: white;
-    padding: 10px;
-    opacity: 0.7;
-    font-size: 100px;
-}
-
-#workexample p{
+#workexample h3{
 
 
     position:absolute;
-    bottom:20%;
+    bottom: 35%;
     left:0;
     text-align: center;
     background-color: white;
@@ -201,5 +202,51 @@ main section figure {
     font-size: 30px;   
 }
 
+#workexample h4{
 
+
+    position:absolute;
+    bottom:27%;
+    left:0;
+    text-align: center;
+    background-color: white;
+    padding: 7px;
+    opacity: 0.7;
+    font-size: 20px;   
+}
+
+footer{
+    border: solid black 5px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+footer a{
+
+    font-size: 30px;
+}
+
+@media screen and (max-width: 939px){
+    
+    header{
+        height: 100px;
+    }
+
+    /* header ul{
+        flex-direction: column;
+    } */
+    
+}
+
+@media screen and (max-width: 880px){
+
+    .firstapp{
+        width: 400px;
+        height: 300px;
+    }
+}
 
