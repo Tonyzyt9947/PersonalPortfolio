@@ -4,16 +4,31 @@
     
 }
 
+a:hover{
+    color: blue;
+    text-shadow: 5px 5px 15px white,-5px -5px 15px white;
+    transition-duration: 0.5s;
+
+}
+
 body{
     display: flex;
     flex-direction: column;
+    /* height: 800px; */
+    background-color: blanchedalmond;
 
+}
+
+section{
+
+    border: black solid 5px;
 }
 
 #hero{
 
     width:100%; height:400px;
     background-color: aqua;
+    display: inline-block;
 
 }
 
@@ -21,10 +36,11 @@ header{
     display: flex;
     position:sticky;
     align-items: center;
+    background-color: grey;
     top:0px;
     width: 100%;
     height: 75px;
-    background-color: antiquewhite;
+    z-index: 999;
 }
 
 header h1{
@@ -61,4 +77,129 @@ header nav ul li{
     margin-right: 50px;
 }
 
-main{ height: 800px;}
+section{
+    margin: 10px;
+    height: 400px;
+}
+
+#aboutme{
+    position:relative;
+    display: flex;
+    /* width: 100%; */
+    height: 300px;
+    align-items: center;
+}
+
+#aboutme img{
+
+    float:left;
+    margin-left: 2%;
+    height: 200px;
+    width: 200px;
+}
+
+#aboutme p{
+    width: 100%
+
+}
+
+section article{
+    display: block;
+    margin: 2%;
+
+}
+
+
+h2{
+
+    font-size: 150%;
+    font-weight: bold;
+    margin:10px,0,0,0;
+    width:100%
+
+
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+main h2{
+    width:100%;
+}
+
+#workexample{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 1200px;
+
+
+}
+
+main section figure {
+    margin:20px;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstapp{
+    border-radius: 20%;
+    box-shadow:5px 5px 10px black, -5px -5px 10px black;
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+
+}
+
+#workexample img {
+    border-radius: 20%;
+    box-shadow:5px 5px 10px black, -5px -5px 10px black;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+}
+#workexample img:hover{
+
+    box-shadow:5px 5px 10px white, -5px -5px 10px white;
+    transition: 0.5s;
+
+}
+
+.pfirstapp{
+
+    position:absolute;
+    bottom:20%;
+    left:0;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.7;
+    font-size: 100px;
+}
+
+#workexample p{
+
+
+    position:absolute;
+    bottom:20%;
+    left:0;
+    text-align: center;
+    background-color: white;
+    padding: 7px;
+    opacity: 0.7;
+    font-size: 30px;   
+}
+
+
+
