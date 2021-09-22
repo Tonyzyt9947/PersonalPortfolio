@@ -1,9 +1,19 @@
+/* Universal Font Size */
 *{
     font-size: 21px;
 
 }
 
+h2{
 
+    font-size: 150%;
+    font-weight: bold;
+    margin:10px,0,0,0;
+    width:100%
+
+}
+
+/* Link styling and hover effects */
 a:link{
     text-decoration: none;
 }
@@ -19,6 +29,8 @@ a:visited{
     color: rgb(79, 198, 238);
 }
 
+
+/* Body background settings */
 body{
     display: flex;
     background-color: black;
@@ -27,6 +39,7 @@ body{
 
 }
 
+/* above header hero image settings */
 #hero{
 
     width:100%; height:600px;
@@ -36,6 +49,7 @@ body{
 
 }
 
+/* header settings */
 header{
     display: flex;
     position:sticky;
@@ -45,16 +59,6 @@ header{
     width: 100%;
     height: 75px;
     z-index: 999;
-}
-
-header h1{
-    color: rgb(90, 50, 202);
-    font-size: 300%;
-    margin-left: 5%;
-    max-width: 50%;
-    float: left;
-    font-family: serif;
-    
 }
 
 header nav{
@@ -70,6 +74,17 @@ header nav{
     
 
 }
+
+header h1{
+    color: rgb(90, 50, 202);
+    font-size: 300%;
+    margin-left: 5%;
+    max-width: 50%;
+    float: left;
+    font-family: serif;
+    
+}
+
 
 header ul{
     
@@ -100,6 +115,7 @@ header ul{
     margin-right: 0;
 }
 
+/* "About me" section settings */
 #aboutme{
     position:relative;
     display: flex;
@@ -127,21 +143,13 @@ header ul{
 
 }
 
-section article{
+#aboutme article{
     display: block;
     margin: 2%;
 
 }
 
-
-h2{
-
-    font-size: 150%;
-    font-weight: bold;
-    margin:10px,0,0,0;
-    width:100%
-
-}
+/* Work examples section settings */
 
 main{
     display: flex;
@@ -172,7 +180,9 @@ main h2{
 
 }
 
-main article figure {
+/* Individual work examples settings */
+
+main figure {
     margin:20px;
     position: relative;
     height: 300px;
@@ -182,17 +192,9 @@ main article figure {
     flex-shrink: 1;
 }
 
-main article figure img{
+main img{
 
     size: auto;
-
-}
-
-.firstapp{
-    width: 800px;
-    height: 400px;
-    display: inline-block;
-    flex-shrink: 1;
 
 }
 
@@ -226,6 +228,15 @@ main article figure img{
     font-size: 30px;   
 }
 
+/* First work example settings */
+.firstapp{
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    flex-shrink: 1;
+
+}
+
 #workexample h4{
 
 
@@ -239,10 +250,11 @@ main article figure img{
     font-size: 20px;   
 }
 
+/* contact list settings */
+
 footer{
     min-height: 150px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: grey;
@@ -256,14 +268,8 @@ footer a{
     display: inline-block;
 }
 
-/* footer figure{
-    border-radius: 50%;
-    background-color: white;
-    width: 70px;
-    height: 70px;
-
-} */
-
+/* contact list links style and hover effects
+ */
 footer img{
 
     width: 70px;
@@ -275,11 +281,11 @@ footer img{
 footer img:hover{
 
     box-shadow:5px 5px 10px white, -5px -5px 10px white;
-    opacity: 1;
-    /* border-radius: 15%; */
     transition: 0.5s;
 
 }
+
+/* Window-size responsive settings */
 
 @media screen and (max-width: 939px){
     
