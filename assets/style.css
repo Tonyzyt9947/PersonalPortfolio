@@ -27,11 +27,6 @@ body{
 
 }
 
-section{
-
-    /* border: black solid 5px; */
-}
-
 #hero{
 
     width:100%; height:600px;
@@ -64,26 +59,45 @@ header h1{
 
 header nav{
 
-    /* border: blue solid 5px; */
-    position: absolute;    
+    position: absolute;       
     right: 0%;
     width: 50%;
+    bottom: 65%;
     font-weight: bolder;
     font-size: 25px;
+    display: flex;
+    justify-content: center; 
+    
 
 }
 
 header ul{
     
-    /* border: black solid 5px; */
     list-style: none;
-    float: right;
+    position: absolute;
+    right:10%;
+    
 
 }
 
-header nav ul li{
+#li1{
+
     display: inline-block;
+    margin-left: 0;
+
+}
+
+#li2{
+
+    display: inline-block;
+    margin-left: 50px;
     margin-right: 50px;
+}
+
+#li3{
+
+    display: inline-block;
+    margin-right: 0;
 }
 
 #aboutme{
@@ -276,14 +290,48 @@ footer img:hover{
     #aboutme{
         height:150%;
     }
-    
-}
 
-@media screen and (max-width: 880px){
+    header ul{
+        position: absolute;
+        right: 10%;
+        list-style: square;
+    }
+
+    header nav{
+
+        bottom: 77%;
+    }
+
+    main figure{
+
+        size:70%;
+
+    }
+
+    #li1{
+        text-align: right;
+        display: block;
+        width:100%;
+    }
+
+    #li2{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: right;
+        width:100%;
+    }
+
+    #li3{
+        display: block;
+        text-align: right;
+        width:100%;
+    }
 
     .firstapp{
         width: 400px;
         height: 300px;
     }
+    
 }
 
