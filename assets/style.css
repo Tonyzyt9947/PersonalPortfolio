@@ -237,17 +237,15 @@ main img{
 
 }
 
-#workexample h4{
+.repo{
 
-
-    position:absolute;
-    bottom:27%;
-    left:0;
+    width:100%;
     text-align: center;
-    background-color: white;
+    background-color: rgb(61, 79, 233);
+    color: white !important;
     padding: 7px;
-    opacity: 0.7;
     font-size: 20px;   
+    border-radius: 10px;
 }
 
 /* contact list settings */
